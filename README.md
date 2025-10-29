@@ -1,7 +1,7 @@
 # simplechainbank
 # 🏦 Simple In-Chain Bank
+<img width="1920" height="1200" alt="Screenshot 2025-10-29 140150" src="https://github.com/user-attachments/assets/86374a6f-bdec-46d2-b951-5c5117518e67" />
 
-![Uploading Screenshot 2025-10-29 140150.png…]()
 
 
 A beginner-friendly **Solidity smart contract** that demonstrates how to build a transparent, decentralized on-chain banking system.  
