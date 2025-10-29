@@ -113,21 +113,3 @@ It allows anyone to **deposit**, **withdraw**, and **transfer** ETH directly thr
 
 ---
 
-## 🧠 Example Frontend Integration (React + Ethers.js)
-
-```javascript
-import { ethers } from "ethers";
-import bankABI from "./SimpleInChainBankABI.json";
-
-const contractAddress = "0x154c40D7a81E934560A92b7D4459Fe5A3449EFFc";
-
-const provider = new ethers.BrowserProvider(window.ethereum);
-const signer = await provider.getSigner();
-const bank = new ethers.Contract(contractAddress, bankABI, signer);
-
-// Deposit example
-await bank.deposit({ value: ethers.parseEther("0.1") });
-
-// Check balance
-const balance = await bank.myBalance();
-console.log("Your balance:", ethers.formatEther(balance), "ETH");
